@@ -268,7 +268,7 @@ export default function PipelinePage() {
       .select()
       .single();
 
-    await logActivity("movió a 'Ganado' el proyecto:", deals.title);
+    await logActivity("registró un nuevo cliente:", newClientData.name);
 
     if (!error && data) {
       setClients([...clients, data]);
