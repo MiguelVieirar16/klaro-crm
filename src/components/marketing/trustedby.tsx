@@ -5,12 +5,12 @@ export default function TrustedBy() {
         <p className="text-center text-sm font-semibold text-slate-500 mb-8 uppercase tracking-wide">
           Respaldado por líderes de proyectos y agencias en crecimiento
         </p>
-        <div className="flex justify-center items-center gap-8 md:gap-16 flex-wrap opacity-60 grayscale">
-          {/* Aquí reemplazarás estos bloques con los logos reales (.svg o .png) de tus clientes */}
-          <div className="h-8 w-32 bg-slate-300 rounded animate-pulse"></div>
-          <div className="h-8 w-32 bg-slate-300 rounded animate-pulse"></div>
-          <div className="h-8 w-32 bg-slate-300 rounded animate-pulse"></div>
-          <div className="h-8 w-32 bg-slate-300 rounded animate-pulse"></div>
+        <div className="flex justify-center items-center gap-8 md:gap-16 flex-wrap opacity-50 grayscale">
+          {["Estudio Creativo", "Agencia Digital", "Constructora NS", "Servicios Pro"].map((name) => (
+            <div key={name} className="h-8 flex items-center px-4 border border-slate-300 rounded-lg">
+              <span className="text-sm font-bold text-slate-500 tracking-tight">{name}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

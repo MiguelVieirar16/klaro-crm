@@ -48,10 +48,45 @@ export default function Hero() {
             <div className="h-[400px] w-[600px] bg-blue-400/20 blur-[100px] rounded-full"></div>
           </div>
           <div className="relative mx-auto max-w-5xl rounded-2xl border border-slate-200/50 bg-white/40 p-2 backdrop-blur-sm shadow-2xl">
-            <div className="aspect-[16/9] w-full rounded-xl bg-slate-800 flex items-center justify-center overflow-hidden border border-slate-700">
-              <p className="text-slate-400 font-medium">
-                [Captura real del Dashboard con gráficas y el Pipeline Kanban]
-              </p>
+            <div className="w-full rounded-xl bg-slate-900 overflow-hidden border border-slate-700 p-5">
+              {/* KPIs */}
+              <div className="grid grid-cols-4 gap-3 mb-4">
+                {[
+                  { label: "Ingresos Reales", value: "$12,450", color: "text-emerald-400" },
+                  { label: "Por Cobrar", value: "$3,200", color: "text-amber-400" },
+                  { label: "Proyectos Activos", value: "8", color: "text-blue-400" },
+                  { label: "Clientes", value: "34", color: "text-purple-400" },
+                ].map((kpi) => (
+                  <div key={kpi.label} className="bg-slate-800 rounded-xl p-3 border border-slate-700">
+                    <p className={`text-lg font-black ${kpi.color}`}>{kpi.value}</p>
+                    <p className="text-[9px] text-slate-500 uppercase font-bold tracking-wider mt-0.5">{kpi.label}</p>
+                  </div>
+                ))}
+              </div>
+              {/* Pipeline Kanban */}
+              <div className="grid grid-cols-4 gap-3">
+                {[
+                  { stage: "Prospectos", color: "bg-slate-500", deals: ["Diseño web", "App móvil"] },
+                  { stage: "Negociación", color: "bg-amber-500", deals: ["Branding corp.", "E-commerce"] },
+                  { stage: "Producción", color: "bg-blue-500", deals: ["Landing page"] },
+                  { stage: "Entregado", color: "bg-emerald-500", deals: ["CRM custom", "SEO Plan"] },
+                ].map((col) => (
+                  <div key={col.stage} className="flex flex-col gap-2">
+                    <div className="flex items-center gap-1.5 mb-1">
+                      <div className={`w-2 h-2 rounded-full ${col.color}`} />
+                      <p className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">{col.stage}</p>
+                    </div>
+                    {col.deals.map((deal) => (
+                      <div key={deal} className="bg-slate-800 rounded-lg px-3 py-2 border border-slate-700">
+                        <p className="text-[11px] text-slate-200 font-semibold">{deal}</p>
+                        <div className="h-1.5 bg-slate-700 rounded-full mt-1.5">
+                          <div className={`h-1.5 rounded-full ${col.color}`} style={{ width: `${40 + Math.random() * 50}%` }} />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

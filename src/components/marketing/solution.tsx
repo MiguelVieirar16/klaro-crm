@@ -70,13 +70,52 @@ export default function Solution() {
             </div>
           </div>
 
-          {/* Placeholder para la imagen de la interfaz de cobranza */}
+          {/* Mockup del modal de cobro */}
           <div className="relative">
-            <div className="w-[48rem] max-w-none rounded-xl bg-slate-800 shadow-2xl ring-1 ring-white/10 sm:w-[57rem] h-[400px] flex items-center justify-center border border-slate-700">
-              <p className="text-slate-400">
-                [Captura del modal Registrar Pago con campos de Tasa BCV y Pago
-                Parcial]
-              </p>
+            <div className="w-[48rem] max-w-none rounded-xl bg-slate-800 shadow-2xl ring-1 ring-white/10 sm:w-[57rem] p-6 border border-slate-700">
+              <p className="text-xs font-black text-slate-400 uppercase tracking-widest mb-4">Registrar Pago — Diseño de Logo Corporativo</p>
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                  <p className="text-[10px] text-slate-500 mb-1 uppercase font-bold">Método de Pago</p>
+                  <div className="flex gap-2">
+                    {["Zelle", "Pago Móvil", "Efectivo $"].map((m, i) => (
+                      <div key={m} className={`px-3 py-1.5 rounded-lg text-[11px] font-bold border ${i === 0 ? "bg-blue-600 border-blue-500 text-white" : "bg-slate-700 border-slate-600 text-slate-300"}`}>{m}</div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className="text-[10px] text-slate-500 mb-1 uppercase font-bold">Monto USD</p>
+                  <div className="bg-slate-700 rounded-lg px-3 py-2 text-white font-black text-sm border border-slate-600">$ 150.00</div>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                  <p className="text-[10px] text-slate-500 mb-1 uppercase font-bold">Tasa BCV del día</p>
+                  <div className="bg-slate-700 rounded-lg px-3 py-2 text-emerald-400 font-black text-sm border border-slate-600">Bs. 46.85 / $</div>
+                </div>
+                <div>
+                  <p className="text-[10px] text-slate-500 mb-1 uppercase font-bold">Equivalente en Bs.</p>
+                  <div className="bg-slate-700 rounded-lg px-3 py-2 text-white font-black text-sm border border-slate-600">Bs. 7,027.50</div>
+                </div>
+              </div>
+              <div className="bg-slate-900 rounded-lg p-3 border border-slate-600 mb-4">
+                <div className="flex justify-between text-[11px] mb-1">
+                  <span className="text-slate-400">Total del proyecto</span>
+                  <span className="text-white font-bold">$450.00</span>
+                </div>
+                <div className="flex justify-between text-[11px] mb-2">
+                  <span className="text-slate-400">Pagado anteriormente</span>
+                  <span className="text-emerald-400 font-bold">$200.00</span>
+                </div>
+                <div className="h-2 bg-slate-700 rounded-full">
+                  <div className="h-2 bg-emerald-500 rounded-full" style={{ width: "44%" }} />
+                </div>
+                <div className="flex justify-between text-[11px] mt-2">
+                  <span className="text-amber-400 font-bold">Saldo pendiente: $250.00</span>
+                  <span className="text-slate-500">44% cobrado</span>
+                </div>
+              </div>
+              <button className="w-full bg-blue-600 text-white text-sm font-bold py-2.5 rounded-lg">Confirmar Pago</button>
             </div>
           </div>
         </div>
