@@ -10,7 +10,8 @@
   "image": "https://placehold.co/800x400/0f172a/38bdf8?text=Klaro+CRM",
   "tags": ["Next.js", "Supabase", "Tailwind CSS"],
   "links": {
-    "github": "https://github.com/informacionklaro/klaro-crm"
+    "github": "https://github.com/MiguelVieirar16/klaro-crm",
+    "preview": "https://klaro-17j9t9fug-miguel-vieiras-projects-75f73acb.vercel.app/"
   },
   "featured": true,
   "order": 3
