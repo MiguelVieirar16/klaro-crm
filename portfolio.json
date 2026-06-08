@@ -7,7 +7,7 @@
     "es": "CRM para pequeñas empresas. Gestiona clientes, pipeline de ventas y cobros multimoneda en una sola plataforma.",
     "en": "CRM for small businesses. Manage clients, sales pipeline and multi-currency payments in one platform."
   },
-  "image": "/public/klaro-crm-cut.webp",
+  "image": "https://placehold.co/800x400/0f172a/38bdf8?text=Klaro+CRM",
   "tags": ["Next.js", "Supabase", "Tailwind CSS"],
   "links": {
     "github": "https://github.com/MiguelVieirar16/klaro-crm",
