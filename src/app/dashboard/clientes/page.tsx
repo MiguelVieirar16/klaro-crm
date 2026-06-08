@@ -121,7 +121,7 @@ export default function ClientesPage() {
         .select()
         .single();
 
-      await logActivity("registró un nuevo cliente:", name);
+      await logActivity("registró un nuevo cliente:", clientData.name);
 
       if (error) {
         alert("Error al crear. Revisa los datos.");
