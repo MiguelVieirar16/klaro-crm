@@ -1,0 +1,17 @@
+{
+  "title": {
+    "es": "Klaro CRM",
+    "en": "Klaro CRM"
+  },
+  "description": {
+    "es": "CRM personal para gestionar contactos, seguimiento de clientes y pipeline de ventas.",
+    "en": "Personal CRM to manage contacts, track clients and sales pipeline."
+  },
+  "image": "https://placehold.co/800x400/0f172a/38bdf8?text=Klaro+CRM",
+  "tags": ["Next.js", "Supabase", "Tailwind CSS"],
+  "links": {
+    "github": "https://github.com/informacionklaro/klaro-crm"
+  },
+  "featured": true,
+  "order": 3
+}
