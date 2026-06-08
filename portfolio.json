@@ -11,7 +11,7 @@
   "tags": ["Next.js", "Supabase", "Tailwind CSS"],
   "links": {
     "github": "https://github.com/MiguelVieirar16/klaro-crm",
-    "preview": "https://klaro-17j9t9fug-miguel-vieiras-projects-75f73acb.vercel.app/"
+    "preview": "https://klaro-crm.vercel.app/"
   },
   "featured": true,
   "order": 3
